@@ -1,9 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
-  text-align: center;
+  background: #f0f4f8;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
+  margin-top: 0;
+  text-align: center;
   color: #2c3e50;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #3498db;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+li button {
+  background: #e74c3c;
+  padding: 4px 10px;
+}
+
+li button:hover {
+  background: #c0392b;
+}
+
+#counter {
+  text-align: center;
+  color: #666;
 }
